@@ -1,0 +1,57 @@
+a{
+    text-decoration: none;
+}
+.item-wrap{
+    display: block;
+    border: 1px solid #999;
+    padding: 10px;
+    border-left: 4px solid #004fa8;
+    position: relative;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,.2);
+}
+.title{
+    font-size: 20px;
+    color: #333;
+
+}
+.item-content{
+    margin-top: 8px;
+    font-size: 10px;
+    color: #aaa;
+    /*overflow:hidden;*/
+    /*text-overflow:ellipsis;*/
+    /*white-space:nowrap;*/
+    /*这三行是一行的文字的省略号*/
+    position: relative;
+    line-height: 1.5em;
+    height: 2.8em;
+    width: 25em;
+    overflow: hidden;
+}
+.item-content::after{
+    content: "...";
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 0 1px 45px;
+}
+.item-data{
+    color: #888;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: right;
+}
+.show-details{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: -36px;
+    color: #fff;
+    background: #555;
+    border: 1px solid #555;
+    border-radius: 3px;
+}
